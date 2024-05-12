@@ -85,8 +85,9 @@ export class MyElement extends LitElement {
         <li class="paragraphone"><i>${this.list1Element11}</i></li>
         <li class="paragraphone"><i>${this.list1Element12}</i></li>
       </ul>
+      <div class="team-img-container">
       <img class="team-img" src="${this.image1URL}">
-
+      </div>
       <h1 class="paragraphtwo">${this.title2}</h1>
       <p class="paragraphtwo">${this.paragraph2}</p>
       <ul>
@@ -95,8 +96,9 @@ export class MyElement extends LitElement {
         <li class="paragraphtwo"><i>${this.list1Element15}</i></li>
         <li class="paragraphtwo"><i>${this.list1Element16}</i></li>
       </ul>
+      <div class="team-img-container">
       <img class="team-img" src="${this.image2URL}">
-
+      </div>
 
       </div>
     `
@@ -108,7 +110,6 @@ export class MyElement extends LitElement {
         max-width: 1280px;
         margin: 0 auto;
         padding: 2rem;
-        text-align: center;
       }
 
       #main {
@@ -135,6 +136,9 @@ export class MyElement extends LitElement {
         color: rgb(117, 108, 199)
         }
 
+      .team-img-container{
+        text-align:center;
+      }
 
     `
   }
