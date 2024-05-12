@@ -18,12 +18,18 @@ export class MyElement extends LitElement {
       list1Element10: { type: String },
       list1Element11: { type: String },
       list1Element12: { type: String },
+      image1URL: { type: String },
+
       title2: { type: String },
       paragraph2: { type: String },
       list1Element13: { type: String },
       list1Element14: { type: String },
       list1Element15: { type: String },
       list1Element16: { type: String },
+      image2URL: { type: String },
+
+      title3: { type: String },
+      paragraph3: { type: String },
 
     }
   }
@@ -46,12 +52,16 @@ export class MyElement extends LitElement {
     this.list1Element10 = 'Iceman (Bobby Drake): Capaz de generar y manipular hielo a su voluntad.'
     this.list1Element11 = 'Colossus (Piotr Rasputin): Con la habilidad de transformarse en un ser de acero orgánico indestructible.'
     this.list1Element12 = 'Kitty Pryde (Shadowcat): Con la habilidad de atravesar objetos sólidos y unirse a ellos como "fantasma".'
+    this.image1URL = 'https://cdn.atomix.vg/wp-content/uploads/2023/09/xmen.png'
+
     this.title2 = '4 Fantasticos'
-    this.paragraph2 = 'Los Cuatro Fantásticos son otro equipo de superhéroes de Marvel Comics. Fueron creados por Stan Lee y Jack Kirby y aparecieron por primera vez en "The Fantastic Four" #1 en 1961. Los miembros principales del equipo son:'
+    this.paragraph2 = 'Los Cuatro Fantásticos son otro equipo de superhéroes de Marvel Comics. Fueron creados por Stan Lee y Jack Kirby y aparecieron por primera vez en "The Fantastic Four" #1 en 1961.Los Cuatro Fantásticos son conocidos por explorar el espacio y el multiverso, enfrentarse a amenazas cósmicas y defender al mundo de peligros de todo tipo. Su título originalmente revolucionó la industria del cómic y sentó las bases para el Universo Marvel que conocemos hoy en día.Los miembros principales del equipo son:'
     this.list1Element13 = 'Sr. Fantástico (Reed Richards): El líder del grupo, posee una inteligencia superhumana y la capacidad de estirar y deformar su cuerpo en cualquier forma imaginable.'
-    this.list1Element15 = 'La Mujer Invisible (Susan Storm-Richards): Esposa de Reed, puede volverse invisible y crear campos de fuerza invisibles.'
-    this.list1Element16 = 'La Antorcha Humana (Johnny Storm): Hermano de Susan, puede encender su cuerpo en llamas y volar.'
-    this.list1Element17 = 'La Cosa (Ben Grimm): Amigo de la infancia de Reed, posee una fuerza y resistencia sobrehumanas, así como una piel pétreo-naranja debido a una exposición a radiación cósmica.'
+    this.list1Element14 = 'La Mujer Invisible (Susan Storm-Richards): Esposa de Reed, puede volverse invisible y crear campos de fuerza invisibles.'
+    this.list1Element15 = 'La Antorcha Humana (Johnny Storm): Hermano de Susan, puede encender su cuerpo en llamas y volar.'
+    this.list1Element16 = 'La Cosa/La mole (Ben Grimm): Amigo de la infancia de Reed, posee una fuerza y resistencia sobrehumanas, así como una piel pétreo-naranja debido a una exposición a radiación cósmica.'
+    this.image2URL = 'https://img.rtve.es/imagenes/cuatro-fantasticos-origen-del-universo-marvel/1471187611866.jpg'
+
 
   }
 
@@ -61,29 +71,36 @@ export class MyElement extends LitElement {
       <h1 class="main-title">${this.title}</h1>
       <h1 class="subtitle">${this.title1}</h1>
       <p class="paragraphone">${this.paragraph1}</p>
-      <li class="paragraphone"><i>${this.list1Element1}</i></i>
-      <li class="paragraphone"><i>${this.list1Element2}</i></i>
-      <li class="paragraphone"><i>${this.list1Element3}</i></i>
-      <li class="paragraphone"><i>${this.list1Element4}</i></i>
-      <li class="paragraphone"><i>${this.list1Element5}</i></i>
-      <li class="paragraphone"><i>${this.list1Element6}</i></i>
-      <li class="paragraphone"><i>${this.list1Element7}</i></i>
-      <li class="paragraphone"><i>${this.list1Element8}</i></i>
-      <li class="paragraphone"><i>${this.list1Element9}</i></i>
-      <li class="paragraphone"><i>${this.list1Element10}</i></i>
-      <li class="paragraphone"><i>${this.list1Element11}</i></i>
-      <li class="paragraphone"><i>${this.list1Element12}</i></i>
+      <ul>
+        <li class="paragraphone"><i>${this.list1Element1}</i></li>
+        <li class="paragraphone"><i>${this.list1Element2}</i></li>
+        <li class="paragraphone"><i>${this.list1Element3}</i></li>
+        <li class="paragraphone"><i>${this.list1Element4}</i></li>
+        <li class="paragraphone"><i>${this.list1Element5}</i></li>
+        <li class="paragraphone"><i>${this.list1Element6}</i></li>
+        <li class="paragraphone"><i>${this.list1Element7}</i></li>
+        <li class="paragraphone"><i>${this.list1Element8}</i></li>
+        <li class="paragraphone"><i>${this.list1Element9}</i></li>
+        <li class="paragraphone"><i>${this.list1Element10}</i></li>
+        <li class="paragraphone"><i>${this.list1Element11}</i></li>
+        <li class="paragraphone"><i>${this.list1Element12}</i></li>
+      </ul>
+      <img class="team-img" src="${this.image1URL}">
+
       <h1 class="paragraphtwo">${this.title2}</h1>
       <p class="paragraphtwo">${this.paragraph2}</p>
-      <li class="paragraphtwo"><i>${this.list1Element13}</i></i>
-      <li class="paragraphtwo"><i>${this.list1Element14}</i></i>
-      <li class="paragraphtwo"><i>${this.list1Element15}</i></i>
-      <li class="paragraphtwo"><i>${this.list1Elemen16}</i></i>
+      <ul>
+        <li class="paragraphtwo"><i>${this.list1Element13}</i></li>
+        <li class="paragraphtwo"><i>${this.list1Element14}</i></li>
+        <li class="paragraphtwo"><i>${this.list1Element15}</i></li>
+        <li class="paragraphtwo"><i>${this.list1Element16}</i></li>
+      </ul>
+      <img class="team-img" src="${this.image2URL}">
 
 
       </div>
     `
-  }//xmen yes, 4fantasticos,avengers,inhumans,defenders
+  }
 
   static get styles() {
     return css`
@@ -109,9 +126,14 @@ export class MyElement extends LitElement {
       .paragraphone{
         color:yellow;
       }
-.paragraphtwo{
-  color: rgb(117, 108, 199)
-}
+
+      .team-img{
+        width: 25vw;
+    }
+    
+      .paragraphtwo{
+        color: rgb(117, 108, 199)
+        }
 
 
     `
